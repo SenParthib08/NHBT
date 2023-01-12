@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 include('../config/config.php');
 $name=$_GET['name'];
 $email=$_GET['email'];
