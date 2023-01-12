@@ -1,0 +1,240 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  z-index: 4;
+}
+body{
+  padding-top: 70px;
+  margin-left: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  /* background-image: linear-gradient(to top, #d7bef5 0%,#d4f9f9 100%); */
+}
+
+::selection{
+  color: #fff;
+  background: #6990F2;
+}
+.wrapper{
+  width: 75vw;
+  background: #fff;
+  border-radius: 5px;
+  padding: 30px;
+  box-shadow: 7px 7px 12px rgba(0,0,0,0.05);
+}
+.wrapper header{
+  color: #6990F2;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper form{
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper form .upload{
+  width: 30%;
+  height: 185px;
+  display: flex;
+  cursor: pointer;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #6990F2;
+}
+.wrapper form .description1{
+  margin-left: 40px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: -42px;
+}
+.wrapper .description1 input{
+  margin-top: 10px;
+  width: 300px;
+  height: 30px;
+  border: 2px solid #8aa7f1;
+  border-radius: 8px;
+}
+.wrapper .description1 textarea{
+  margin-top: 20px;
+  width: 300px;
+  border: 2px solid #8aa7f1;
+  border-radius: 10px;
+}
+
+
+.wrapper form .description2{
+  margin-left: 40px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  margin-top: -18px;
+}
+.wrapper .description2 input{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 300px;
+  height: 30px;
+  border: 2px solid #8aa7f1;
+  border-radius: 8px;
+}
+.wrapper .description2 textarea{
+  margin-top: 20px;
+  width: 300px;
+  border: 2px solid #8aa7f1;
+  border-radius: 10px;
+}
+
+
+.wrapper .description2 .btn{
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 100px;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #041748;
+  background: #acc1f6;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px grey;
+}
+.wrapper .description2 .btn:active{
+  background: #bccbef;
+  box-shadow: none;
+  
+}
+
+textarea{
+  resize: none;
+}
+form :where(i, p){
+  color: #6990F2;
+}
+form i{
+  font-size: 50px;
+}
+form p{
+  margin-top: 15px;
+  font-size: 16px;
+}
+@media (max-width: 1290px){
+  .wrapper{
+    margin: 40px;
+    width: auto;
+    font-size: 15px;
+}
+  /* .wrapper form{
+    flex-direction: row;
+  } */
+  .wrapper .description1 input{
+    width: 230px;
+  }
+  .wrapper .description1 textarea{
+    width: 230px; 
+  }
+  .wrapper .description2 input{
+    width: 230px;
+  }
+  .wrapper .description2 textarea{
+    width: 230px; 
+  }
+}
+@media (max-width: 768px){
+  .wrapper{
+      margin: 40px;
+      width: auto;
+  }
+  .wrapper form{
+    flex-direction: row;
+  }
+  .wrapper .description1 input{
+    width: 250px;
+  }
+  .wrapper .description1 textarea{
+    width: 250px; 
+  }
+  .wrapper .description2 input{
+    width: 250px;
+  }
+  .wrapper .description2 textarea{
+    width: 250px; 
+  }
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.header_fixed {
+    max-height: 100vh;
+    /* width: 100%; */
+    /* overflow: auto; */
+    border: 1px solid #dddddd;
+}
+
+.header_fixed thead th {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: #e6e7e8;
+    font-size: 15px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+td img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 5px solid #e6e7e8;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+tr:nth-child(odd) {
+    background-color: #edeef1;
+}
+
+tr:hover td {
+    color: #44b478;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+td button {
+    border: none;
+    padding: 7px 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: #e6e7e8;
+}

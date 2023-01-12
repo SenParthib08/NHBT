@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  z-index: 4;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  /* background-image: linear-gradient(to top, #d7bef5 0%,#d4f9f9 100%); */
+}
+::selection{
+  color: #fff;
+  background: #6990F2;
+}
+.wrapper{
+  width: 430px;
+  height: 70vh;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 9px 9px 18px rgba(0,0,0,0.05);
+}
+.wrapper header{
+  color: #6990F2;
+  font-size: 27px;
+  font-weight: 600;
+  text-align: center;
+}
+/* .wrapper form .upload{
+  height: 200px;
+  display: flex;
+  cursor: pointer;
+  margin: 30px 0;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #6990F2;
+} */
+.wrapper .description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .description input{
+  margin-top: 10px;
+  width: 350px;
+  height: 30px;
+  border: 2px solid #8aa7f1;
+  border-radius: 8px;
+}
+.wrapper .description textarea{
+   margin-top: 20px;
+   width: 350px;
+   border: 2px solid #8aa7f1;
+   border-radius: 10px;
+}
+.wrapper .description .btn{
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: 100px;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #041748;
+  background: #acc1f6;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px grey;
+}
+.wrapper .description .btn:active{
+  background: #bccbef;
+  box-shadow: none;
+  
+}
+.wrapper form .upload{
+  height: 167px;
+  display: flex;
+  cursor: pointer;
+  margin: 30px 0;
+  padding: 40px 0px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #6990F2;
+}
+textarea{
+    resize: none;
+}
+form :where(i, p){
+  color: #6990F2;
+}
+form i{
+  font-size: 50px;
+}
+form p{
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+@media (max-width: 768px){
+    .wrapper{
+        margin: 40px;
+    }
+    .wrapper .description input{
+      width: 250px;
+    }
+    .wrapper .description textarea{
+      width: 250px; 
+    }
+}
