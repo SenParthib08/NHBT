@@ -177,7 +177,7 @@ include('header.php');
 
         <div class="card-singlee">
             <div>
-                <h2>About Us Info</h2>
+                <h2>Our Community Info</h2>
                 <br>
                 <div class="second-body">
                     <table>
@@ -190,14 +190,19 @@ include('header.php');
                         </thead>
                         <tbody>
                             <?php
-                            $res=mysqli_query($con,"SELECT `id`, `item`, `data`, `status` FROM `site_config`");
-                            while($site_config=mysqli_fetch_assoc($res)){
+                            $res=mysqli_query($con,"SELECT `id`, `item`, `data` FROM `our_community`");
+                            while($our_community=mysqli_fetch_assoc($res)){
+                                if(strlen($our_community['data'])>30){
+                                    $data="Big DATA, to see the data hit edit";
+                                }else{
+                                    $data=$contact_info['data'];
+                                }
                             ?>
                             <form action="" method="post">
                             <tr>
-                                <td><?php echo $site_config['item']; ?></td>
-                                <td><?php echo $site_config['data']; ?></td>
-                                <td><button class="status" type="submit"> <a href="edit_dashboard.php?updateid=<?php echo $site_config['id'];?>&item=<?php echo $site_config['item']; ?>&data=<?php echo $site_config['data']; ?>" style="color:rgb(93, 2, 2);">edit</a> </button></td>
+                                <td><?php echo $our_community['item']; ?></td>
+                                <td><?php echo $data; ?></td>
+                                <td><button class="status" type="submit"> <a href="edit_our_community.php?updateid=<?php echo $our_community['id'];?>&item=<?php echo $our_community['item']; ?>&data=<?php echo $our_community['data']; ?>" style="color:rgb(93, 2, 2);">edit</a> </button></td>
                             </tr>
                             </form>
                             <?php } ?>
