@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about{
+    height: 100vh;
+    max-height: 200vh;
+    width: 100%;
+    /* background-image: linear-gradient(to top, #330867 0%,#30cfd0 100%); */
+    /* background-color: #45562B; */
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2334441E' stroke-width='4.9'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23295506'%3E%3Ccircle cx='769' cy='229' r='12'/%3E%3Ccircle cx='539' cy='269' r='12'/%3E%3Ccircle cx='603' cy='493' r='12'/%3E%3Ccircle cx='731' cy='737' r='12'/%3E%3Ccircle cx='520' cy='660' r='12'/%3E%3Ccircle cx='309' cy='538' r='12'/%3E%3Ccircle cx='295' cy='764' r='12'/%3E%3Ccircle cx='40' cy='599' r='12'/%3E%3Ccircle cx='102' cy='382' r='12'/%3E%3Ccircle cx='127' cy='80' r='12'/%3E%3Ccircle cx='370' cy='105' r='12'/%3E%3Ccircle cx='578' cy='42' r='12'/%3E%3Ccircle cx='237' cy='261' r='12'/%3E%3Ccircle cx='390' cy='382' r='12'/%3E%3C/g%3E%3C/svg%3E"); */
+    background-color: #1C710B;
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cg %3E%3Cpolygon fill='%23009600' points='100 57.1 64 93.1 71.5 100.6 100 72.1'/%3E%3Cpolygon fill='%233db600' points='100 57.1 100 72.1 128.6 100.6 136.1 93.1'/%3E%3Cpolygon fill='%23009600' points='100 163.2 100 178.2 170.7 107.5 170.8 92.4'/%3E%3Cpolygon fill='%233db600' points='100 163.2 29.2 92.5 29.2 107.5 100 178.2'/%3E%3Cpath fill='%2363D62C' d='M100 21.8L29.2 92.5l70.7 70.7l70.7-70.7L100 21.8z M100 127.9L64.6 92.5L100 57.1l35.4 35.4L100 127.9z'/%3E%3Cpolygon fill='%235e8e0c' points='0 157.1 0 172.1 28.6 200.6 36.1 193.1'/%3E%3Cpolygon fill='%237dac32' points='70.7 200 70.8 192.4 63.2 200'/%3E%3Cpolygon fill='%239DCC51' points='27.8 200 63.2 200 70.7 192.5 0 121.8 0 157.2 35.3 192.5'/%3E%3Cpolygon fill='%237dac32' points='200 157.1 164 193.1 171.5 200.6 200 172.1'/%3E%3Cpolygon fill='%235e8e0c' points='136.7 200 129.2 192.5 129.2 200'/%3E%3Cpolygon fill='%239DCC51' points='172.1 200 164.6 192.5 200 157.1 200 157.2 200 121.8 200 121.8 129.2 192.5 136.7 200'/%3E%3Cpolygon fill='%235e8e0c' points='129.2 0 129.2 7.5 200 78.2 200 63.2 136.7 0'/%3E%3Cpolygon fill='%239DCC51' points='200 27.8 200 27.9 172.1 0 136.7 0 200 63.2 200 63.2'/%3E%3Cpolygon fill='%237dac32' points='63.2 0 0 63.2 0 78.2 70.7 7.5 70.7 0'/%3E%3Cpolygon fill='%239DCC51' points='0 63.2 63.2 0 27.8 0 0 27.8'/%3E%3C/g%3E%3C/svg%3E"); */
+    background-color: #28FF7E;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23B4FF88' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%2328FF7E' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%232ff075' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%2333e26b' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%2335d363' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%2336c55a' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%2336b752' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%2336aa4a' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23349c43' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23328f3b' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%232f8234' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%232c752e' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23296927' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23255c21' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%2321501c' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%231c4516' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%23183911' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23132f0b' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23102403' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+.about .main img{
+    width: 580px;
+    max-width: 100%;
+    height: auto;
+    padding: 0 10px;
+}
+.all-text{
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+.main{
+    width: 1290px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.all-text h4{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+.all-text h1{
+    font-size: 55px;
+    color: #e7f8f8;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.all-text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    line-height: 30px;
+    margin-bottom: 35px;
+    color: white;
+}
+.btn button{
+    background: white;
+    padding: 20px 32px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;
+    border: none;
+    outline: none;
+    box-shadow: 0px 16px 32px 0px rgb(0 0 0 / 6%);
+    margin-right: 20px;
+}
+.btn button:hover{
+    background-color: rgb(12, 48, 3);
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn .btn2{
+    background: #1111;
+    color: white;
+}
+#more{
+    display: none;
+}
+
+@media screen and (max-width: 1250px){
+    .about{
+        width: 100%;
+        height: auto;
+        padding: 60px 0;
+    }
+    .all-text{
+        text-align: center;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width: 650px){
+    .about .main img{
+        margin-bottom: 35px;
+    }
+    .all-text h1{
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+    .btn button{
+        margin: 15px;
+    }
+}
