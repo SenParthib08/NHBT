@@ -51,6 +51,10 @@ body {
   overflow-x: hidden;
 }
 
+section .container{
+  margin-top: 100px;
+}
+
 /* Grouping content
 	 ========================================================================== */
 /**
@@ -7243,6 +7247,9 @@ input:checked + .slider:before {
 }
 
 @media (max-width: 991px) {
+  section .container{
+    margin-top: 0px;
+  }
   .real-numbers .chart-boxs .chart-item {
     max-width: 340px;
     margin: 0 auto 40px;
