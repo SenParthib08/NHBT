@@ -45,7 +45,8 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
       <video class="video" src="video/bgVideo4.mp4" autoplay muted loop></video>
       <div class="content active">
         <h1>New Horizons<br>in Biotechnology</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure.</p>
+        <p>Application of Biotechnology for a sustainable living has amplified over the past few decades by addressing the diverse domains including agriculture, food, health care, livestock management, energy, environment, waste management and a
+        multitude of other areas. It may not be incorrect to say that the world needs to move towards a sustainable bio-economy for human race to continue on this planet. New Horizons in Biotechnology (NHBT) are a series of national conferences organized by the Department of Biotechnology, Haldia Institute of Technology with this theme in focus, where global challenges in multiple sectors are discussed and debated in the biotechnological context.</p>
         <a href="Explore.html">Explore</a>
       </div>
       <div class="media-icons">
@@ -60,7 +61,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
         <div class="leftBox">
             <div class="content">
                 <h1>EVENTS AND ANNOUNCEMENTS</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptates aut, eaque possimus rem, laboriosam consequatur fugiat exercitationem veritatis vel reprehenderit voluptate nulla ad quis nostrum quisquam. Cum qui neque cupiditate fuga minus dicta eos asperiores reiciendis, debitis ullam consequuntur doloribus voluptate rerum mollitia quibusdam eligendi sequi quo soluta. Sit expedita suscipit nulla odit commodi harum autem nemo similique distinctio?</p>
+                <p>The event consists of various interactive sessions. They are the guest lectures, poster presentation, paper presentation quiz etc. The main focuses of this year's discussions are microbial and environmental biotechnology, omics biotechnology, biopharmaceutical product development & quality control, bioethics & patent biotechnology etc.</p>
             </div>
         </div>
         <div class="events">
@@ -72,7 +73,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
                     </div>
                     <div class="details">
                         <h3>Event 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, praesentium? Maxime tempore fugiat culpa voluptas!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit laboriosam ullam tempore impedit autem voluptatem, consequ</p>
                         <a href="#">View Details</a>
                     </div>
                     <div style="clear: both;"></div>
@@ -113,7 +114,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
             <div class="columns contents">
                 <div class="content-container card1">
                     <h2>Our Mission</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem suscipit tenetur nobis autem officia ullam possimus, saepe assumenda. Mollitia labore ut vitae exercitationem facere, atque deleniti dicta nemo. Eligendi quos quo dolore! Sint repellendus quis dicta recusandae non, sequi voluptas!</p>
+                    <p>To bring to the students the latest advancements in biotechnology both in academic and industrial areas and their application in multifarious fields. To bridge the gap between industry and academia through an exchange of knowledge between industry personnel, scientists & academicians and NGOs in an open environment through wide discussions. To develop the skills for a sound scientific communication and interaction amongst the participants and speakers alike.</p>
                 </div>
             </div>
         </div>
@@ -122,7 +123,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
             <div class="columns contents">
                 <div class="content-container card2">
                     <h2>Our Vision</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem suscipit tenetur nobis autem officia ullam possimus, saepe assumenda. Mollitia labore ut vitae exercitationem facere, atque deleniti dicta nemo. Eligendi quos quo dolore! Sint repellendus quis dicta recusandae non, sequi voluptas!.</p>
+                    <p>To bring together students, academicians, and industrial personnel from different parts of the country to share their comprehension pertaining to the developments in the emerging areas of biotechnology and associated fields. To promote and encourage the research work and entrepreneurship among student so that they can contribute to the field of their studies.</p>
                 </div>
             </div>
             <div class="columns image" style="background-image: url('images/vision.jpg')">
@@ -137,7 +138,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
             <div class="columns contents">
                 <div class="content-container card1">
                     <h2>Our History</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem suscipit tenetur nobis autem officia ullam possimus, saepe assumenda. Mollitia labore ut vitae exercitationem facere, atque deleniti dicta nemo. Eligendi quos quo dolore! Sint repellendus quis dicta recusandae non, sequi voluptas!</p>
+                    <p>New Horizons in Biotechnology was initially aimed to bring togather some of the recent developments in Biotechnology in India. It was initiated by Prof. Pranab Roy, faculty of the department at that time. It was also whole-heartedly welcomed by Dr. Siraj Dutta, HoD of the department of that time. Soon a national advisory committee was developed. And after a decade of the initiation, the conference is highly successful in its motive.</p>
                 </div>
             </div>
         </div>

@@ -157,7 +157,7 @@
   }
 
 
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -167,7 +167,7 @@
 html{
   font-size: 62.5%;
   overflow-x: hidden;
-}
+} */
 body{
     background: linear-gradient(to top, #330867 100%,#30cfd0 0%);
 }
@@ -178,6 +178,7 @@ section{
 
 .home{
   position: relative;
+  margin-top: -40px;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -321,7 +322,7 @@ section .leftBox .content{
     color: #fff;
 }
 section .leftBox .content:hover{
-    background:linear-gradient(to top, #88d3ce 0%, #6e45e2 100%);
+    background: rgba(255,255,255,0.3);
     color: rgb(6, 25, 46);
     transition: 0.5s;
 }
@@ -666,6 +667,7 @@ section .section2{
     display: inline-block;
     height: 40px;
     width: 40px;
+    font-size: 18px;
     background-color: rgba(255,255,255,0.2);
     margin:0 8px 8px 0;
     text-align: center;

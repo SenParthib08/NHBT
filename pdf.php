@@ -14,7 +14,7 @@ include('track.php');
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header.css"
 </head>
 
 <body class="royal_preloader">
