@@ -1,6 +1,5 @@
 <?php
 include('config/db.php');
-include('header.php');
 $facebook=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='facebook_link'"))['data'];
 $linkedin=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='linkedin_link'"))['data'];
 $youtube=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='youtube_link'"))['data'];
@@ -17,18 +16,18 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
 </head>
 
 <header>
-        <a href="#" class="brand">NHBT</a>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-        <div class="navigation-items">
-            <a href="#">Home</a>
-            <a href="#section2-about">About</a>
-            <a href="pdf.php">Explore</a>
-            <a href="#">Gallery</a>
-            <a href="#footer">Contact</a>
-        </div>
-        </div>
-    </header>
+    <a href="#" class="brand">NHBT</a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+    <div class="navigation-items">
+        <a href="#">Home</a>
+        <a href="#section2-about">About</a>
+        <a href="pdf.php">Explore</a>
+        <a href="#">Gallery</a>
+        <a href="#footer">Contact</a>
+    </div>
+    </div>
+</header>
 
 <script>
     const menuBtn = document.querySelector(".menu-btn");
