@@ -52,31 +52,31 @@ include('config/config.php');
     <div class="footer-container">
         <div class="row">
           <div class="footer-col">
-            <h4>Dr. Suvroma Gupta</h4>
+            <h4><?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE item='name1'"))['data']; ?></h4>
             <div class="social-links">
-                <a href="mailto: suvroma.gupta@gmail.com? cc=nationalseminarhit@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/suvroma-gupta-92138735" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto: <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE item='name1_email'"))['data']; ?>" target="_blank"><i class="fa fa-envelope"></i></a>
+                <a href="<?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE item='name1_linkedin'"))['data']; ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a>
               </div>
           </div>
           <div class="footer-col">
-            <h4>Dr. Keya Sau</h4>
+            <h4><?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE item='name2'"))['data']; ?></h4>
             <div class="social-links">
-                <a href="mailto: keyasau07@gmail.com? cc=nationalseminarhit@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/keya-sau-63b87aab" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto: <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE id=5"))['data']; ?>" target="_blank"><i class="fa fa-envelope"></i></a>
+                <a href="<?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE id=6"))['data']; ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a>
               </div>
           </div>
           <div class="footer-col">
-            <h4>Souradipto Choudhuri</h4>
+            <h4><?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `student_body` WHERE item='name1'"))['data']; ?></h4>
             <div class="social-links">
-                <a href="mailto: sourochaudhuri@gmail.com? cc=nationalseminarhit@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/souradipto-choudhuri" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto: <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `student_body` WHERE id=2"))['data']; ?>" target="_blank"><i class="fa fa-envelope"></i></a>
+                <a href="<?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `student_body` WHERE id=3"))['data']; ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a>
               </div>
           </div>
           <div class="footer-col">
-            <h4>Eshna Dutta</h4>
+            <h4><?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `student_body` WHERE item='name2'"))['data']; ?></h4>
             <div class="social-links">
-                <a href="mailto: eshnadutta@gmail.com? cc=nationalseminarhit@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/eshna-dutta-2b42214b" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto: <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `student_body` WHERE id=5"))['data']; ?>" target="_blank"><i class="fa fa-envelope"></i></a>
+                <a href="<?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `student_body` WHERE id=6"))['data']; ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             </div>
           </div>
         </div>
