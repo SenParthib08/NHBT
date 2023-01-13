@@ -129,14 +129,6 @@ include('header.php');
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
     <div class="second-cards">
         <div class="card-singlee">
             <div>
@@ -212,13 +204,81 @@ include('header.php');
             </div>
         </div>
     </div>
+    <div class="second-cards">
+        <div class="card-singlee">
+            <div>
+                <h2>Social Media and Contact Info</h2>
+                <br>
+                <div class="second-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Data</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $res=mysqli_query($con,"SELECT `id`, `item`, `data`  FROM `contact_info`");
+                            while($contact_info=mysqli_fetch_assoc($res)){
+                                if(strlen($contact_info['data'])>30){
+                                    $link="Big LINK, to see the link hit edit";
+                                }else{
+                                    $link=$contact_info['data'];
+                                }
+                            ?>
+                            <form action="" method="post">
+                            <tr>
+                                <td><?php echo $contact_info['item']; ?></td>
+                                <td><?php echo $link; ?></td>
+                                <td><button class="status" type="submit"> <a href="edit_social_media_info.php?updateid=<?php echo $contact_info['id'];?>&item=<?php echo $contact_info['item']; ?>&data=<?php echo $contact_info['data']; ?>" style="color:rgb(93, 2, 2);">edit</a> </button></td>
+                            </tr>
+                            </form>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
-
-
-
-
-
-
+        <div class="card-singlee">
+            <div>
+                <h2>Our Community Info</h2>
+                <br>
+                <div class="second-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Data</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $res=mysqli_query($con,"SELECT `id`, `item`, `data` FROM `our_community`");
+                            while($our_community=mysqli_fetch_assoc($res)){
+                                if(strlen($our_community['data'])>30){
+                                    $data="Big DATA, to see the data hit edit";
+                                }else{
+                                    $data=$contact_info['data'];
+                                }
+                            ?>
+                            <form action="" method="post">
+                            <tr>
+                                <td><?php echo $our_community['item']; ?></td>
+                                <td><?php echo $data; ?></td>
+                                <td><button class="status" type="submit"> <a href="edit_our_community.php?updateid=<?php echo $our_community['id'];?>&item=<?php echo $our_community['item']; ?>&data=<?php echo $our_community['data']; ?>" style="color:rgb(93, 2, 2);">edit</a> </button></td>
+                            </tr>
+                            </form>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
 </body>
 </html>
