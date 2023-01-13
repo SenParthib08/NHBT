@@ -24,9 +24,14 @@ if(isset($_POST['submit'])){
   <body>
     <div class="container">
 
-        
+    <div>
+            <br>
+            <h5 style="font-weight:100;">1. Do NOT use any special characters. </h5>
+            <h5 style="font-weight:100;">2. Do NOT use any space between two &lt;li&gt; tag.</h5>
+            <h5 style="font-weight:100;">3. Do NOT use ENTER KEY.</h5>
+            <h5 style="font-weight:100;">4. Put your content this format "&lt;li&gt;content&lt;/li	&gt;&lt;li&gt;content&lt;/li&gt;".</h5>
+        </div>
 
-        
         <br><br>
         <form action="" method="post">
             <div class="form-group">
