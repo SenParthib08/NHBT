@@ -129,14 +129,6 @@ include('header.php');
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
     <div class="second-cards">
         <div class="card-singlee">
             <div>
@@ -212,13 +204,6 @@ include('header.php');
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
 </main>
 </body>
 </html>
