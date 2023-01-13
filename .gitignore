@@ -1,14 +1,14 @@
 # remove some file from staging area in root folder
 /check.php
 /note.php
-
+media/
 
 
 # Long files
-*.png
-*.jpg
-*.mp4
-*.pdf
+# *.png
+# *.jpg
+# *.mp4
+# *.pdf
 
 # other files
 

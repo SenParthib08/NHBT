@@ -1,3 +1,6 @@
+<?php
+include('config/config.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/our_community.css">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>Our Community</title>
 </head>
@@ -16,13 +19,13 @@
             <br>
             <ul class="Areas area2">
                 <h3>Chief Patron:</h3>
-                <li>D. Lit. (Dr). Laksman Chandra Seth, Chairman, HIT</li>
+                <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `our_community` WHERE item='Chief Patron'"))['data']; ?>
             </ul>
             <br><br><br>
             <h3 class="heading">National Advisory Committee:</h3>
             <br>
             <ul class="Areas area3">
-            <li>Mr. Sayantan Seth, Vice Chairman HIT Haldia</li><li>Mr. Asis Lahiri, Secretary, ICARE, Haldia</li><li>Prof. Subrata Mondal, Principal, HIT Haldia</li><li>Dr. Anjan Mishra, Registrar, HIT Haldia</li><li>Mr. Anupam Aash, Senior Quality Control Officer, IOCL, Haldia</li><li>Prof. Subrata Sau, Senior Scientist and Chairman, Department of Biochemistry, Bose Institute</li><li>Dr. Kausik Maji, Professor and Head (General Medicine), ICARE Institute of Medical Sciences and Research, Haldia</li><li>Mr. Amal Kumar Dutta. OSD, ICARE, Haldia</li><li>Prof. Radha Das, Dean (CHE, BT and FT), HIT Haldia</li><li>Prof. T. K Jana, Dean Engg Sci. Coordinator IQAC, HIT Haldia</li><li>Mr. C. S. Prasad, COO, Indorama Agro Chemicals, Haldia</li>
+            <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `our_community` WHERE item='NAC'"))['data']; ?>
             </ul>
             <br><br><br>
 
@@ -30,21 +33,19 @@
             <br>
             <ul class="Areas area2">
                 <h3>Chairman:</h3>
-                <li>Dr. Suvroma Gupta, HoD, BT, HIT, Haldia</li>
+                <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `our_community` WHERE item='Chairman'"))['data']; ?>
                 <br>
                 <h3>Convenor, NHBT 2023:</h3>
-                <li>Dr. Keya Sau, Assoc. Prof., BT, HIT, Haldia</li>
+                <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `our_community` WHERE item='Convenor'"))['data']; ?>
                 <br>
                 <h3>Co Convenor, NHBT 2023:</h3>
-                <li>Dr. Shamba Chatterjee, Asst. Prof., BT, HIT, Haldia</li>
-                <li>Dr. Swati Maiti, Asst. Prof., BT, HIT, Haldia</li>
+                <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `our_community` WHERE item='Co Convenor'"))['data']; ?>
                 <br>
                 <h3>Treasurers:</h3>
-                <li>Dr. Sucheta Das (Maji), Assoc. Prof ., BT, HIT, Haldia</li>
-                <li>Mr. S. Basu, Finance Manager, HIT, Haldia</li>
+                <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `our_community` WHERE item='Treasurers'"))['data']; ?>
                 <br>
                 <h3>Members:</h3>
-                <li>Dr. S. Das, Assoc. Prof., BT , HIT, Haldia</li><li>Dr. M.Singh, Assoc. Prof., BT , HIT, Haldia</li><li>Mr. T.R. Maity, Asst. Prof., BT, HIT, Haldia</li><li>Mrs. A. Bhaduri, Asst. Prof., BT, HIT, Haldia</li><li>Dr. S. Dutta, Asst. Prof., BT, HIT, Haldia</li><li>Mr. Sk. A.R. Abdullah, Asst. Prof., BT, HIT, Haldia</li><li>Mrs. S. Metya, Asst. Prof., HIT, Haldia</li><li>Mrs. D. Das, Asst. Prof., HIT, Haldia</li><li>Mrs. M. Das, Asst. Prof., HIT, Haldia</li><li>Mr. C. Maity, General Assistant, BT, HIT, Haldia</li>
+                <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `our_community` WHERE item='Members'"))['data']; ?>
             </ul>
         </div>
     </section>
