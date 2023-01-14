@@ -24,7 +24,7 @@
     list-style: none;
   }
   .footer{
-    background: rgb(92, 115, 155);
+    background: linear-gradient(to bottom, #59b7e3 10%,#7448bb 90%);
     /* background: rgb(31,25,25); */
     padding: 70px 0;
   }
