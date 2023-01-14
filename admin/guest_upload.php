@@ -7,7 +7,6 @@ if(isset($_POST['delete'])){
     $file_path=$_POST['path'];
     unlink("../".$file_path);
     $query_run=mysqli_query($con,"DELETE FROM `guest` WHERE id='$id'");
-    header("Location: guest_upload.php");
 }
 if(isset($_POST['submit'])){
     foreach($_FILES['doc']['name'] as $key=>$val){
