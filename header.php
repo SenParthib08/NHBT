@@ -5,7 +5,7 @@
         <div class="navigation-items">
         <a href="index.php">Home</a>
         <a href="about_us.php">About</a>
-        <a href="pdf.php">Explore</a>
+        <a href="pdf.php">Proceedings</a>
         <a href="guest.php">Guests</a>
         <a href="gallery.php">Gallery</a>
         <a href="contact.php">Contact</a>
