@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-  <!-- Coding by CodingLab | www.codinglabweb.com -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,21 +37,27 @@
                     <input type="text" placeholder="Search...">
                 </li> -->
 
-                <ul class="menu-links">
-                    <li class="active">
-                        <a href="dashboard.php">
+                <ul class="menu-links" id="sidebar">
+                    <li>
+                        <a class="btns" href="dashboard.php">
                             <i class='bx bx-home-alt icon' ></i>
                             <span class="text nav-text">Dashboard</span>
                         </a>
                     </li>
-
+                    
                     <li >
                         <a href="payments.php">
                             <i class='bx bx-wallet icon' ></i>
                             <span class="text nav-text">Payments</span>
                         </a>
                     </li>
-
+                    
+                    <li >
+                        <a class="btns" href="contact_manage.php">
+                            <i class='bx bx-envelope icon'></i>
+                            <span class="text nav-text">Contact Manage</span>
+                        </a>
+                    </li>
                     <li>
                         <a href="guest_upload.php">
                             <i class='bx bxs-user-circle icon' ></i>
@@ -67,22 +72,16 @@
                         </a>
                     </li>
 
-                    <li >
-                        <a href="contact_manage.php">
-                            <i class='bx bx-envelope icon'></i>
-                            <span class="text nav-text">Contact Manage</span>
-                        </a>
-                    </li>
 
                     <li>
-                        <a href="pdf.php">
+                        <a class="btns" href="pdf.php">
                             <i class='bx bxs-file-pdf icon' ></i>
                             <span class="text nav-text">Pdf Manage</span>
                         </a>
                     </li>
 
                     <li>
-                        <a href="gallery.php">
+                        <a class="btns" href="gallery.php">
                             <i class='bx bxs-category icon' ></i>
                             <span class="text nav-text">Gallery Manage</span>
                         </a>
@@ -114,5 +113,18 @@
             </div>
         </div>
     </nav>
+    <!-- JS code to add the active class to the links on click -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        const currentLocation = location.href;
+        const menuItem = document.querySelectorAll("a");
+        const menuLenght = menuItem.length;
+
+        for (let i = 0; i < menuLenght; i++) {
+        if (menuItem[i].href === currentLocation) {
+            menuItem[i].className = "active";
+        }
+        }
+    </script>
 </body>
 </html>
