@@ -1,6 +1,7 @@
 <?php
 include('config/config.php');
 include('track.php');
+include('header.php');
 ?>
 <style>
     .size{
@@ -20,6 +21,7 @@ include('track.php');
     <link rel="stylesheet" href="css/font-awesome.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
 </head>
 
 <body class="royal_preloader">
@@ -89,3 +91,6 @@ include('track.php');
     <script src="js/jquery.min.js"></script>
     <script src="js/scripts.js"></script>
 </html>
+<?php
+include('footer.php') 
+?>

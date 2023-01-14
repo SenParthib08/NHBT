@@ -1,7 +1,6 @@
 <?php
 include('config/config.php');
 include('track.php');
-$error_message="";
 if(isset($_POST['submit'])){
     $name=$_POST['name'];
     $email=$_POST['email'];
@@ -41,6 +40,7 @@ if(isset($_POST['submit'])){
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
 </head>
 
 <body class="royal_preloader">
@@ -122,7 +122,10 @@ if(isset($_POST['submit'])){
                         </div>
                     </div>
                 </div><br>
-            </section>
+        </section>
 </div>
 </body>
 </html>
+<?php
+include('footer.php')
+?>

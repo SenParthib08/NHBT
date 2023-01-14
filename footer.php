@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 <body>
-<footer class="footer" id="footer" style="background: linear-gradient(to bottom, #330867 10%,#167070 90%);">
+<footer class="footer" id="footer">
       <div class="footer-container">
         <div class="row">
           <div class="footer-col">

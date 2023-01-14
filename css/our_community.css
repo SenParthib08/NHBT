@@ -14,6 +14,7 @@ body{
     background-size: cover;
 }
 .container{
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,6 +24,9 @@ body{
 }
 .heading{
     font-size: 35px;
+}
+.container .community{
+    margin-top: 50px;
 }
 .container .community ul h3{
     font-size: 25px;
@@ -48,6 +52,9 @@ body{
     }
     .container{
         padding: 40px;
+    }
+    .container .community{
+        margin-top: 0px;
     }
     .container .community ul h3{
         font-size: 20px;

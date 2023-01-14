@@ -1,7 +1,7 @@
 <?php
 include('config/config.php');
 include('track.php');
-// include('header.php');
+include('header.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,23 +14,10 @@ include('track.php');
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css"
+    <link rel="stylesheet" href="css/header.css" />
 </head>
 
 <body class="royal_preloader">
-<header>
-    <a href="#" class="brand">NHBT</a>
-    <div class="menu-btn"></div>
-    <div class="navigation">
-    <div class="navigation-items">
-        <a href="#">Home</a>
-        <a href="#section2-about">About</a>
-        <a href="pdf.php">Explore</a>
-        <a href="#">Gallery</a>
-        <a href="#footer">Contact</a>
-    </div>
-    </div>
-</header>
     
 <section class="container">
 <div id="page" class="site">
@@ -79,15 +66,6 @@ include('track.php');
     
 </div><!-- #page -->
 </section>
-<script>
-    const menuBtn = document.querySelector(".menu-btn");
-    const navigation = document.querySelector(".navigation");
-        
-    menuBtn.addEventListener("click", () => {
-        menuBtn.classList.toggle("active");
-        navigation.classList.toggle("active");
-    });
-</script>
 </body>
 </html>
 <?php
