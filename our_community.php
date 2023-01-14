@@ -1,5 +1,6 @@
 <?php
 include('config/config.php');
+include('header.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,6 +10,7 @@ include('config/config.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/our_community.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>Our Community</title>
 </head>

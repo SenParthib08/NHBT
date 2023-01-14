@@ -14,7 +14,7 @@ include('header.php');
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/header.css"
+    <link rel="stylesheet" href="css/header.css" />
 </head>
 
 <body class="royal_preloader">
@@ -66,15 +66,6 @@ include('header.php');
     
 </div><!-- #page -->
 </section>
-<script>
-    const menuBtn = document.querySelector(".menu-btn");
-    const navigation = document.querySelector(".navigation");
-        
-    menuBtn.addEventListener("click", () => {
-        menuBtn.classList.toggle("active");
-        navigation.classList.toggle("active");
-    });
-</script>
 </body>
 </html>
 <?php
