@@ -1,7 +1,7 @@
 <?php
 include('config/config.php');
 include('track.php');
-// include('header.php');
+include('header.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,19 +18,6 @@ include('track.php');
 </head>
 
 <body class="royal_preloader">
-<header>
-    <a href="#" class="brand">NHBT</a>
-    <div class="menu-btn"></div>
-    <div class="navigation">
-    <div class="navigation-items">
-        <a href="#">Home</a>
-        <a href="#section2-about">About</a>
-        <a href="pdf.php">Explore</a>
-        <a href="#">Gallery</a>
-        <a href="#footer">Contact</a>
-    </div>
-    </div>
-</header>
     
 <section class="container">
 <div id="page" class="site">
