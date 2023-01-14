@@ -19,13 +19,14 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
     <a href="#" class="brand">NHBT</a>
     <div class="menu-btn"></div>
     <div class="navigation">
-    <div class="navigation-items">
-        <a href="#">Home</a>
-        <a href="#section2-about">About</a>
+        <div class="navigation-items">
+        <a href="index.php">Home</a>
+        <a href="about_us.php">About</a>
         <a href="pdf.php">Explore</a>
-        <a href="#">Gallery</a>
-        <a href="#footer">Contact</a>
-    </div>
+        <a href="guest.php">Guests</a>
+        <a href="gallery.php">Gallery</a>
+        <a href="contact.php">Contact</a>
+        </div>
     </div>
 </header>
 
@@ -47,7 +48,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
         <h1>New Horizons<br>in Biotechnology</h1>
         <p>Application of Biotechnology for a sustainable living has amplified over the past few decades by addressing the diverse domains including agriculture, food, health care, livestock management, energy, environment, waste management and a
         multitude of other areas. It may not be incorrect to say that the world needs to move towards a sustainable bio-economy for human race to continue on this planet. New Horizons in Biotechnology (NHBT) are a series of national conferences organized by the Department of Biotechnology, Haldia Institute of Technology with this theme in focus, where global challenges in multiple sectors are discussed and debated in the biotechnological context.</p>
-        <a href="Explore.html">Explore</a>
+        <a href="#section2-about">Explore</a>
       </div>
       <div class="media-icons">
         <a href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -148,25 +149,29 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
       <div class="footer-container">
         <div class="row">
           <div class="footer-col">
-            <h4>company</h4>
-            <ul>
+            <!-- <h4>company</h4> -->
+            <img src="images/logo.png" alt="">
+            <!-- <ul>
               <li><a href="#">about us</a></li>
               <li><a href="#">our services</a></li>
               <li><a href="#">privacy policy</a></li>
               <li><a href="#">affiliate program</a></li>
-            </ul>
+            </ul> -->
           </div>
           <div class="footer-col">
-            <h4>get help</h4>
+            <h4>Details:</h4>
             <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">shipping</a></li>
-              <li><a href="#">returns</a></li>
-              <li><a href="#">order status</a></li>
-              <li><a href="#">payment options</a></li>
+              <li><a href="#">Department of Biotechnology</a></li>
+              <li><a href="#">HIT, ICARE Complex, Hatiberia</a></li>
+              <li><a href="#">Haldia, Purba Medinipore, WB, 721657</a></li>
+              <?php $email=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='email'"))['data']; ?>
+              <li><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
+              <?php $phone=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='phone'"))['data'];
+                $phone_ouner=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='phone_owner'"))['data']; ?>
+              <li><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?> (<?php echo $phone_ouner; ?>)</a></li>
             </ul>
           </div>
-          <div class="footer-col">
+          <!-- <div class="footer-col">
             <h4>online shop</h4>
             <ul>
               <li><a href="#">watch</a></li>
@@ -174,7 +179,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
               <li><a href="#">shoes</a></li>
               <li><a href="#">dress</a></li>
             </ul>
-          </div>
+          </div> -->
           <div class="footer-col">
             <h4>follow us</h4>
             <div class="social-links">
@@ -186,4 +191,5 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
           </div>
         </div>
       </div>
+  </footer>
 </html>

@@ -13,31 +13,20 @@
       <div class="footer-container">
         <div class="row">
           <div class="footer-col">
-            <h4>company</h4>
-            <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">affiliate program</a></li>
-            </ul>
+            <!-- <h4>company</h4> -->
+            <img src="images/logo.png" alt="">
           </div>
           <div class="footer-col">
-            <h4>get help</h4>
+            <h4>Details:</h4>
             <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">shipping</a></li>
-              <li><a href="#">returns</a></li>
-              <li><a href="#">order status</a></li>
-              <li><a href="#">payment options</a></li>
-            </ul>
-          </div>
-          <div class="footer-col">
-            <h4>online shop</h4>
-            <ul>
-              <li><a href="#">watch</a></li>
-              <li><a href="#">bag</a></li>
-              <li><a href="#">shoes</a></li>
-              <li><a href="#">dress</a></li>
+              <li><a href="#">Department of Biotechnology</a></li>
+              <li><a href="#">HIT, ICARE Complex, Hatiberia</a></li>
+              <li><a href="#">Haldia, Purba Medinipore, WB, 721657</a></li>
+              <?php $email=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='email'"))['data']; ?>
+              <li><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
+              <?php $phone=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='phone'"))['data'];
+                $phone_ouner=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='phone_owner'"))['data']; ?>
+              <li><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?> (<?php echo $phone_ouner; ?>)</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -51,6 +40,6 @@
           </div>
         </div>
       </div>
-    </footer>
+  </footer>
 </body>
 </html>

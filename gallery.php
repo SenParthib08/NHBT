@@ -1,8 +1,8 @@
 <?php
 include('config/config.php');
 include('track.php');
+include('header.php');
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,6 +15,7 @@ include('track.php');
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
 </head>
 
 <body class="royal_preloader">
@@ -98,3 +99,6 @@ include('track.php');
     <script src="js/scripts.js"></script>
 </body>
 </html>
+<?php
+include('footer.php');
+?>

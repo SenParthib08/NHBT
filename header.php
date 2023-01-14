@@ -1,13 +1,14 @@
 <header>
-    <a href="#" class="brand">NHBT</a>
+    <a href="index.php" class="brand">NHBT</a>
     <div class="menu-btn"></div>
     <div class="navigation">
         <div class="navigation-items">
-        <a href="#">Home</a>
-        <a href="AboutUs.html">About</a>
-        <a href="Explore.html">Explore</a>
-        <a href="#">Gallery</a>
-        <a href="#footer">Contact</a>
+        <a href="index.php">Home</a>
+        <a href="about_us.php">About</a>
+        <a href="pdf.php">Explore</a>
+        <a href="guest.php">Guests</a>
+        <a href="gallery.php">Gallery</a>
+        <a href="contact.php">Contact</a>
         </div>
     </div>
 </header>

@@ -561,6 +561,9 @@ big {
 .text-primary {
   color: #fe4c1c;
 }
+textarea{
+  resize: none;
+}
 
 .text-second {
   color: #00c3ff;
@@ -8606,9 +8609,11 @@ img {
     background-color: #15b7ec;
 }
 .team-wrap .team-social .facebook {
+    padding-top: 10px;
     background-color: #0160e7;
 }
 .team-wrap .team-social .pinterest, .steam-social .pinterest {
+    padding-top: 10px;
     background-color: #fe4c1c;
 }
 @media (min-width: 992px){

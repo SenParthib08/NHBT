@@ -625,8 +625,12 @@ section .section2{
     padding: 70px 0;
   }
   .footer-col{
-    width: 25%;
+    width: 33%;
     padding: 0 15px;
+  }
+  .footer-col img{
+    width: 250px;
+    height: 250px;
   }
   .footer-col h4{
     font-size: 22px;
@@ -685,8 +689,12 @@ section .section2{
   @media(max-width: 767px){
     .footer-col{
       width: 50%;
-      margin-bottom: 30px;
-  }
+      margin-bottom: 30px; 
+    }
+    .footer-col img{
+      width: 150px;
+      height: 150px;
+    }
   }
   @media(max-width: 574px){
     .footer-col{
