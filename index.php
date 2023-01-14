@@ -126,7 +126,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
                     <h2>Our Vision</h2>
                     <p>To bring together students, academicians, and industrial personnel from different parts of the country to share their comprehension pertaining to the developments in the emerging areas of biotechnology and associated fields. To promote and encourage the research work and entrepreneurship among student so that they can contribute to the field of their studies.</p>
                 </div>
-            </div>
+            </div>https://github.com/ratulbmg/NHBT/pull/7/conflict?name=index.php&base_oid=6040416480d701eb446eaf118e7d33c1c461cc76&head_oid=09761de96092be07de3b15b7c5de773c1edb4e71
             <div class="columns image" style="background-image: url('images/vision.jpg')">
                 &nbsp;
             </div>
