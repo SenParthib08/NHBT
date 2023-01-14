@@ -14,7 +14,7 @@
         <div class="row">
           <div class="footer-col">
             <!-- <h4>company</h4> -->
-            <img src="images/logo.png" alt="">
+            <img src="images/logo_circle.png" alt="">
           </div>
           <div class="footer-col">
             <h4>Details:</h4>

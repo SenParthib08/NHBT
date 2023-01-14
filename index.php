@@ -22,7 +22,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
         <div class="navigation-items">
         <a href="index.php">Home</a>
         <a href="about_us.php">About</a>
-        <a href="pdf.php">Explore</a>
+        <a href="pdf.php">Proceedings</a>
         <a href="guest.php">Guests</a>
         <a href="gallery.php">Gallery</a>
         <a href="contact.php">Contact</a>
@@ -150,7 +150,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
         <div class="row">
           <div class="footer-col">
             <!-- <h4>company</h4> -->
-            <img src="images/logo.png" alt="">
+            <img src="images/logo_circle.png" alt="">
             <!-- <ul>
               <li><a href="#">about us</a></li>
               <li><a href="#">our services</a></li>
