@@ -1,6 +1,7 @@
 <?php
 include('config/config.php');
 include('track.php');
+$error_message="";
 if(isset($_POST['submit'])){
     $name=$_POST['name'];
     $email=$_POST['email'];
