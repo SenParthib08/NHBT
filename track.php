@@ -22,7 +22,3 @@ if(!isset($_COOKIE[date("Y")])){
     mysqli_query($con,"UPDATE `visitor` SET year_visit=year_visit+1, this_year='$this_year'");
 }
 ?>
-<?php
-
-
-?>

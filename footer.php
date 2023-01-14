@@ -43,10 +43,10 @@
           <div class="footer-col">
             <h4>follow us</h4>
             <div class="social-links">
-              <a href="https://www.facebook.com/parthib.sen.58"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/its_too_me/"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.linkedin.com/in/parthib-sen-64416a224/"><i class="fab fa-linkedin-in"></i></a>
+              <a href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="<?php echo $linkedin; ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="<?php echo $youtube; ?>" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="<?php echo $website; ?>" target="_blank"><i class="fa fa-globe"></i></a>
             </div>
           </div>
         </div>

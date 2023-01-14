@@ -129,6 +129,8 @@ include('header.php');
             </div>
         </div>
     </div>
+
+
     <div class="second-cards">
         <div class="card-singlee">
             <div>
@@ -187,7 +189,7 @@ include('header.php');
                                 if(strlen($our_community['data'])>30){
                                     $data="Big DATA, to see the data hit edit";
                                 }else{
-                                    $data=$contact_info['data'];
+                                    $data=$our_community['data'];
                                 }
                             ?>
                             <form action="" method="post">
@@ -195,6 +197,81 @@ include('header.php');
                                 <td><?php echo $our_community['item']; ?></td>
                                 <td><?php echo $data; ?></td>
                                 <td><button class="status" type="submit"> <a href="edit_our_community.php?updateid=<?php echo $our_community['id'];?>&item=<?php echo $our_community['item']; ?>&data=<?php echo $our_community['data']; ?>" style="color:rgb(93, 2, 2);">edit</a> </button></td>
+                            </tr>
+                            </form>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second-cards">
+    <div class="card-singlee">
+            <div>
+                <h2>Community Footer Faculty Body</h2>
+                <br>
+                <div class="second-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Data</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $res=mysqli_query($con,"SELECT `id`, `item`, `data`  FROM `faculty_body`");
+                            while($faculty_body=mysqli_fetch_assoc($res)){
+                                if(strlen($faculty_body['data'])>30){
+                                    $link="Big TEXT, to see the text hit edit";
+                                }else{
+                                    $link=$faculty_body['data'];
+                                }
+                            ?>
+                            <form action="" method="post">
+                            <tr>
+                                <td><?php echo $faculty_body['item']; ?></td>
+                                <td><?php echo $link; ?></td>
+                                <td><button class="status" type="submit"> <a href="edit_faculty_body.php?updateid=<?php echo $faculty_body['id'];?>&item=<?php echo $faculty_body['item']; ?>&data=<?php echo $faculty_body['data']; ?>" style="color:rgb(93, 2, 2);">edit</a> </button></td>
+                            </tr>
+                            </form>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-singlee">
+            <div>
+                <h2>Community Footer Student Body</h2>
+                <br>
+                <div class="second-body">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Data</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $res=mysqli_query($con,"SELECT `id`, `item`, `data` FROM `student_body`");
+                            while($student_body=mysqli_fetch_assoc($res)){
+                                if(strlen($student_body['data'])>30){
+                                    $data="Big LINK, to see the link hit edit";
+                                }else{
+                                    $data=$student_body['data'];
+                                }
+                            ?>
+                            <form action="" method="post">
+                            <tr>
+                                <td><?php echo $student_body['item']; ?></td>
+                                <td><?php echo $data; ?></td>
+                                <td><button class="status" type="submit"> <a href="edit_student_body.php?updateid=<?php echo $student_body['id'];?>&item=<?php echo $student_body['item']; ?>&data=<?php echo $student_body['data']; ?>" style="color:rgb(93, 2, 2);">edit</a> </button></td>
                             </tr>
                             </form>
                             <?php } ?>
