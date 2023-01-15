@@ -108,8 +108,6 @@ if(isset($_POST['submit'])){
             </tbody>
         </table>
   </div>
-
   <script src="../js/guest_upload.js"></script>
-
 </body>
 </html>

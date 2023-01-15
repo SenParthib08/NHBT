@@ -1,9 +1,37 @@
 <?php
+session_start();
+include('../config/db.php');
 $username_cookie='';
 $password_cookie='';
+$error="";
 if(isset($_COOKIE['username']) && isset($_COOKIE['password'])){
     $username_cookie=$_COOKIE['username'];
     $password_cookie=$_COOKIE['password'];
+}
+if(isset($_POST['submit'])){
+    $username=$_POST['username'];
+    $password=$_POST['password'];
+    $data=mysqli_fetch_assoc(mysqli_query($con,"SELECT * FROM `login` WHERE user_name='$username' and user_pass='$password'"));
+    if($data){
+        if(isset($_POST['check'])){
+            setcookie('username',$username,time()+3600*24);
+            setcookie('password',$password,time()+3600*24);
+        }else{
+            setcookie('username',$username,30);
+            setcookie('password',$password,30);
+        }
+        $_SESSION['IsLogin']='yes';
+        $_SESSION['LastActiveTime']=time();
+        header('Location:dashboard.php');
+        die();
+    }
+    else{
+        if($username=="" or $password==""){
+            $error="Please enter username or password";
+        }else{
+            $error="Please enter correct login details";
+        }
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -20,31 +48,31 @@ if(isset($_COOKIE['username']) && isset($_COOKIE['password'])){
 </head>
 <body>
    <div class="box">
-    <!-- <form action="" method="post"> -->
+    <form action="" method="post">
         <div class="container">
 
             <div class="top">
                 <!-- <span>Have an account?</span> -->
                 <header>Login</header>
             </div>
-            <span id="error"></span>
+            <span><?php echo $error; ?></span>
             <div class="input-field">
-                <input type="text" class="input" placeholder="Username" id="username" value="<?php echo $username_cookie ?>">
+                <input type="text" class="input" name="username" placeholder="Username" id="username" value="<?php echo $username_cookie ?>">
                 <i class='bx bx-user' ></i>
             </div>
 
             <div class="input-field">
-                <input type="Password" class="input" placeholder="Password" id="password" value="<?php echo $password_cookie ?>">
+                <input type="Password" class="input" name="password" placeholder="Password" id="password" value="<?php echo $password_cookie ?>">
                 <i class='bx bx-lock-alt'></i>
             </div>
 
             <div class="input-field">
-                <input type="submit" class="submit" value="Login" onclick="login()" />
+                <input type="submit" class="submit" name="submit" value="Login" onclick="login()" />
             </div>
 
             <div class="two-col">
                 <div class="one">
-                <input type="checkbox" id="check">
+                <input type="checkbox" id="check" name="check">
                 <label > Remember Me</label>
                 </div>
                 <div class="two">
@@ -52,37 +80,7 @@ if(isset($_COOKIE['username']) && isset($_COOKIE['password'])){
                 </div>
             </div>
         </div>
-    <!-- </form> -->
+    </form>
 </div>  
 </body>
 </html>
-
-<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-<script>
-    function login(){
-        var username=jQuery('#username').val();
-        var password=jQuery('#password').val();
-        // var check=jQuery('#check').val();
-        // alert(check);
-        var is_error='';
-        jQuery('#error').html('');
-        if(username=='' || password==''){
-            jQuery('#error').html('Please enter username or password');
-            is_error='yes';
-        }
-        if(is_error==''){
-            jQuery.ajax({
-                url:'check.php',
-                type:'post',
-                data:'username='+username+'&password='+password+'&remember='+check,
-                success:function(result){
-                    if(result=='correct'){
-                        window.location.href='dashboard.php';
-                    }else{
-                        jQuery('#error').html('Please enter correct login details');
-                    }
-                }
-            });
-        }
-    }
-</script>
