@@ -14,8 +14,8 @@ if(isset($_POST['submit'])){
     $data=mysqli_fetch_assoc(mysqli_query($con,"SELECT * FROM `login` WHERE user_name='$username' and user_pass='$password'"));
     if($data){
         if(isset($_POST['check'])){
-            setcookie('username',$username,time()+30);
-            setcookie('password',$password,time()+30);
+            setcookie('username',$username,time()+60*60*60);
+            setcookie('password',$password,time()+60*60*60);
         }else{
             setcookie('username',$username,30);
             setcookie('password',$password,30);
