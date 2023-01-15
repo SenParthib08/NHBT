@@ -337,6 +337,33 @@ section .leftBox .content p{
     font-size: 1.6rem;
 }
 
+section .leftBox .buttons{
+  margin-top: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+section .leftBox .buttons .btn{
+  padding: 10px 20px;
+  margin: 20px;
+  border-radius: 10px;
+  border: none;
+  background-image: linear-gradient(to right, #6ecbe9 0%, #6f8bf0 100%);
+  box-shadow: 3px 3px 8px rgb(19, 23, 36);
+}
+section .leftBox .buttons .btn:active{
+  background-image: linear-gradient(to right, #abddee 0%, #9aacee 100%);
+  color: rgb(10, 22, 51);
+  box-shadow: none;
+}
+section .leftBox .buttons .btn a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 450;
+  text-decoration: none;
+}
+
 section .events{
     width: 50%;
     position: relative;
@@ -371,9 +398,11 @@ section .events ul li .time{
     float: left;
     text-align: center;
     transition: 0.3s ease;
+    /* border-radius: 10px; */
 }
 section .events ul li:hover .time{
     background: rgb(48, 48, 139);
+    /* border-radius: 10px; */
 }
 section .events ul li .time h1{
     position: absolute;
@@ -428,6 +457,26 @@ section .events ul li .details a:hover{
     background: #3e81c0;
     color: rgb(255, 255, 255);
     border-color: #3e81c0;
+}
+section .events .btn2{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 60px;
+  margin-bottom: 20px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: none;
+  background: rgb(99, 125, 199);
+}
+section .events .btn2:active{
+  background: rgb(73, 196, 205);
+}
+section .events .btn2 a{
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
 }
 
 section .section2{
@@ -531,6 +580,9 @@ section .section2{
         background: transparent;
         float: none;
     }
+    section .events .btn2{
+      margin: 20px;
+    }
     section .leftBox .content{
         padding: 20px;
     }
@@ -539,6 +591,13 @@ section .section2{
     }
     section .leftBox .content p{
         font-size: 1rem;
+    }
+    section .leftBox .buttons{
+      margin-top: 20px;      
+      margin-bottom: -40px;      
+    }
+    section .leftBox .buttons .btn{
+      font-size: 12px;
     }
     section .events ul{
         position: relative;

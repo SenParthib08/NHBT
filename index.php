@@ -64,6 +64,10 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
                 <h1>EVENTS AND ANNOUNCEMENTS</h1>
                 <p>The event consists of various interactive sessions. They are the guest lectures, poster presentation, paper presentation quiz etc. The main focuses of this year's discussions are microbial and environmental biotechnology, omics biotechnology, biopharmaceutical product development & quality control, bioethics & patent biotechnology etc.</p>
             </div>
+            <!-- <div class="buttons">
+              <button class="btn"> <a href="#">Poster template</a> </button>
+              <button class="btn"> <a href="#">Paper template</a> </button>
+            </div> -->
         </div>
         <div class="events">
             <ul>
@@ -104,6 +108,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
                     <div style="clear: both;"></div>
                 </li>
             </ul>
+            <button class="btn2"><a href="event_pdf.php">View More</a></button>
         </div>
     </section>
 
