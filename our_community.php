@@ -86,3 +86,9 @@ include('header.php');
     <br><br><br>
 </body>
 </html>
+<style>
+.footer-col{
+    width: 25%;
+    padding: 0 20px;
+  }
+</style>
