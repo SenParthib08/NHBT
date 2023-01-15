@@ -29,18 +29,6 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
         </div>
     </div>
 </header>
-
-<script>
-    const menuBtn = document.querySelector(".menu-btn");
-    const navigation = document.querySelector(".navigation");
-        
-    menuBtn.addEventListener("click", () => {
-        menuBtn.classList.toggle("active");
-        navigation.classList.toggle("active");
-    });
-</script>
-
-
   <body>
     <section class="home">
       <video class="video" src="video/bgVideo4.mp4" autoplay muted loop></video>
@@ -193,3 +181,13 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
       </div>
   </footer>
 </html>
+
+<script>
+    const menuBtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+        
+    menuBtn.addEventListener("click", () => {
+        menuBtn.classList.toggle("active");
+        navigation.classList.toggle("active");
+    });
+</script>
