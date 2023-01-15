@@ -43,4 +43,5 @@ if(isset($_POST['submit'])){
     </div>
   </body>
 </html>
-
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script src="../js/auto_logout.js"></script>

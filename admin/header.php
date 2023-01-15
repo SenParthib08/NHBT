@@ -126,5 +126,6 @@
         }
         }
     </script>
+    <script src="../js/auto_logout.js"></script>
 </body>
 </html>
