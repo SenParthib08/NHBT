@@ -55,42 +55,41 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
         </div>
         <div class="events">
             <ul>
+            <?php
+                $res=mysqli_query($con,"SELECT `date`, `month`, `event_titel`, `event_desc_short` FROM event_manage ORDER BY id LIMIT 3");
+                while($rows=mysqli_fetch_assoc($res)){
+                    $date=$rows['date'];
+                    $month=$rows['month'];
+                    $event_titel=$rows['event_titel'];
+                    $event_desc_short=$rows['event_desc_short'];
+                    ?>
                 <li>
                     <div class="time">
-                        <h1>07<br><span>DEC</span>
+                        <h1><?php echo $date; ?><br><span><?php echo $month; ?></span>
                         </h1>
                     </div>
                     <div class="details">
-                        <h3>Event 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit laboriosam ullam tempore impedit autem voluptatem, consequ</p>
-                        <a href="#">View Details</a>
+                        <h3><?php echo $event_titel; ?></h3>
+                        <p><?php echo $event_desc_short; ?></p>
+                        <a href="event_pdf.php">View Details</a>
                     </div>
                     <div style="clear: both;"></div>
                 </li>
-                <li>
+                <?php
+                }
+                ?>
+                <!-- <li>
                     <div class="time">
                         <h1>08<br><span>DEC</span>
                         </h1>
                     </div>
                     <div class="details">
                         <h3>Event 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, praesentium? Maxime tempore fugiat culpa voluptas!</p>
-                        <a href="#">View Details</a>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. VelitLorem ipsum dolor</p>
+                        <a href="event_pdf.php">View Details</a>
                     </div>
                     <div style="clear: both;"></div>
-                </li>
-                <li>
-                    <div class="time">
-                        <h1>09<br><span>DEC</span>
-                        </h1>
-                    </div>
-                    <div class="details">
-                        <h3>Event 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, praesentium? Maxime tempore fugiat culpa voluptas!</p>
-                        <a href="#">View Details</a>
-                    </div>
-                    <div style="clear: both;"></div>
-                </li>
+                </li> -->
             </ul>
             <button class="btn2"><a href="event_pdf.php">View More</a></button>
         </div>

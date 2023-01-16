@@ -56,7 +56,7 @@ if(isset($_POST['submit'])){
         <input type="text" name="date" id="date" inputmode="text" placeholder=" Date">
         <input type="text" name="month" id="month" inputmode="text" placeholder=" Month">
         <input type="text" name="event_titel" id="event_titel" inputmode="text" placeholder=" Event Titel">
-        <textarea type="text" name="event_short_description" id="event_short_description" placeholder= " Event Short Description" style="height:40px;" cols="20" rows="5"></textarea>
+        <textarea type="text" name="event_short_description" id="event_short_description" placeholder= " Event Short Description 80 word" style="height:40px;" cols="20" rows="5"></textarea>
      </div>
       <div class="description2">
         <textarea type="text" name="event_description" id="event_description" placeholder= " Event Description" style="height:140px;" cols="20" rows="5"></textarea>
