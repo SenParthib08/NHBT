@@ -467,7 +467,7 @@ section .events .btn2{
   padding: 2px 8px;
   border-radius: 10px;
   border: none;
-  background: rgb(99, 125, 199);
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
 }
 section .events .btn2:active{
   background: rgb(73, 196, 205);
