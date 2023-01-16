@@ -23,7 +23,7 @@
               <li><a href="#">HIT, ICARE Complex, Hatiberia</a></li>
               <li><a href="#">Haldia, Purba Medinipore, WB, 721657</a></li>
               <?php $email=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='email'"))['data']; ?>
-              <li><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
+              <li><a href="mailto:<?php echo $email; ?>" style="text-transform: lowercase;"><?php echo $email; ?></a></li>
               <?php $phone=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='phone'"))['data'];
                 $phone_ouner=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='phone_owner'"))['data']; ?>
               <li><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?> (<?php echo $phone_ouner; ?>)</a></li>
