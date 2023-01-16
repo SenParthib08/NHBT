@@ -77,11 +77,12 @@ body{
     /* background: #fff8ba; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     width: 100px;
     padding: 8px;
     border-radius: 16px;
     margin: 30px 100px;
+    margin-left: 0px;
     font-size: 14px;
   }
   .event .event-right .event-description{
