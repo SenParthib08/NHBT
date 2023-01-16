@@ -20,6 +20,12 @@ include('header.php');
           <div class="event-date">
             <div class="date">16</div>
             <div class="month">Jan</div>
+            <br><br>
+            <div class="event-time" style="font-size: 14px;">
+              <div class="start">10:00 am</div>
+              <span class="to">to</span>
+              <div class="end">12:00 pm</div>
+            </div>
           </div>
         </div>
 
@@ -38,8 +44,8 @@ include('header.php');
 
           <div class="event-timing">
             <!-- <img src="images/time.png" alt="" /> 10:00 am -->
-            <button class="btn"> <a href="#">View Details</a> </button>
-            <button class="btn"> <a href="#">Poster template</a> </button>
+            <a class="btn" href="#">Details</a>
+            <a class="btn" href="#">Template</a>
           </div>
         </div>
       </div>
@@ -51,6 +57,12 @@ include('header.php');
           <div class="event-date">
             <div class="date">17</div>
             <div class="month">Jan</div>
+            <br><br>
+            <div class="event-time" style="font-size: 14px;">
+              <div class="start">10:00 am</div>
+              <span class="to">to</span>
+              <div class="end">12:00 pm</div>
+            </div>
           </div>
         </div>
 
@@ -69,8 +81,8 @@ include('header.php');
 
           <div class="event-timing">
             <!-- <img src="images/time.png" alt="" /> 10:00 am -->
-            <button class="btn"> <a href="#">View Details</a> </button>
-            <button class="btn"> <a href="#">Poster template</a> </button>
+            <a class="btn" href="#">Details</a>
+            <a class="btn" href="#">Template</a>
           </div>
         </div>
       </div>
@@ -83,6 +95,12 @@ include('header.php');
           <div class="event-date">
             <div class="date">18</div>
             <div class="month">Jan</div>
+            <br><br>
+            <div class="event-time" style="font-size: 14px;">
+              <div class="start">10:00 am</div>
+              <span class="to">to</span>
+              <div class="end">12:00 pm</div>
+            </div>
           </div>
         </div>
 
@@ -101,8 +119,8 @@ include('header.php');
 
           <div class="event-timing">
             <!-- <img src="images/time.png" alt="" /> 10:00 am -->
-            <button class="btn"> <a href="#">View Details</a> </button>
-            <button class="btn"> <a href="#">Poster template</a> </button>
+            <a class="btn" href="#">Details</a>
+            <a class="btn" href="#">Template</a>
           </div>
         </div>
       </div>
@@ -114,6 +132,12 @@ include('header.php');
           <div class="event-date">
             <div class="date">19</div>
             <div class="month">Jan</div>
+            <br><br>
+            <div class="event-time" style="font-size: 14px;">
+              <div class="start">10:00 am</div>
+              <span class="to">to</span>
+              <div class="end">12:00 pm</div>
+            </div>
           </div>
         </div>
 
@@ -132,73 +156,12 @@ include('header.php');
 
           <div class="event-timing">
             <!-- <img src="images/time.png" alt="" /> 10:00 am -->
-            <button class="btn"> <a href="#">View Details</a> </button>
-            <button class="btn"> <a href="#">Poster template</a> </button>
+            <a class="btn" href="#">Details</a>
+            <a class="btn" href="#">Template</a>
           </div>
         </div>
       </div>
-
-      
-      
-      <div class="event">
-        <div class="event-left">
-          <div class="event-date">
-            <div class="date">20</div>
-            <div class="month">Jan</div>
-          </div>
-        </div>
-
-        <div class="event-right">
-          <h3 class="event-title">Event 5</h3>
-
-          <div class="event-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
-            ratione.
-          </div>
-          <br>
-          <div class="event-description-large">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
-            ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit facilis distinctio quis quaerat? Ex amet dignissimos magnam saepe porro harum impedit libero, recusandae aperiam adipisci odit. Omnis necessitatibus porro eligendi.
-          </div>
-
-          <div class="event-timing">
-            <!-- <img src="images/time.png" alt="" /> 10:00 am -->
-            <button class="btn"> <a href="#">View Details</a> </button>
-            <button class="btn"> <a href="#">Poster template</a> </button>
-          </div>
-        </div>
-      </div>
-
-      
-      
-      <div class="event">
-        <div class="event-left">
-          <div class="event-date">
-            <div class="date">21</div>
-            <div class="month">Jan</div>
-          </div>
-        </div>
-
-        <div class="event-right">
-          <h3 class="event-title">Event 6</h3>
-
-          <div class="event-description">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
-            ratione.
-          </div>
-          <br>
-          <div class="event-description-large">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus,
-            ratione. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit facilis distinctio quis quaerat? Ex amet dignissimos magnam saepe porro harum impedit libero, recusandae aperiam adipisci odit. Omnis necessitatibus porro eligendi.
-          </div>
-
-          <div class="event-timing">
-            <!-- <img src="images/time.png" alt="" /> 10:00 am -->
-            <button class="btn"> <a href="#">View Details</a> </button>
-            <button class="btn"> <a href="#">Poster template</a> </button>
-          </div>
-        </div>
-      </div>
+     </div>
     </div>
   </body>
 </html>
