@@ -66,7 +66,7 @@
                     </li>
 
                     <li >
-                        <a href="event.php">
+                        <a href="event_upload.php">
                             <i class='bx bx-calendar-event icon' ></i>
                             <span class="text nav-text">Event Manage</span>
                         </a>
