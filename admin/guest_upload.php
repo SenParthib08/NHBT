@@ -43,28 +43,29 @@ if(isset($_POST['submit'])){
     <section class="home">
         <div class="text">Guest Manage</div>
     </section>
-  <div class="wrapper header_fixed">
-    <form method="post" enctype="multipart/form-data" >
-      <div class="upload">
-        <header>image size should be 370 x 370</header>
-        <br>
-        <input class="file-input" type="file" name="doc[]" accept="image/*" hidden multiple >
-        <i class="fas fa-cloud-upload-alt"></i>
-        <p>Browse File to Upload</p>
-      </div>
-      <div class="description1">
-        <input type="text" name="name" id="name" inputmode="text" placeholder=" Guest Name">
-        <textarea type="text" name="description" id="description" placeholder= " Guest Description" id="" cols="20" rows="5"></textarea>
-        <!-- <input type="text" inputmode="text"> -->
-     </div>
-      <div class="description2">
-        <input type="text" name="email" id="email" inputmode="email" placeholder=" Guest email">
-        <input type="text" name="linkedin" id="linkedin" inputmode="text" placeholder=" Guest LinkedIn">
-        <!-- <input type="text" inputmode="text"> -->
-        <button class="btn" type="submit" name="submit" >Add</button>
-     </div>
-    </form>
-    <table>
+    <div class="wrapper header_fixed">
+        <form method="post" enctype="multipart/form-data" >
+        <div class="upload">
+            <header>image size should be 370 x 370</header>
+            <br>
+            <input class="file-input" type="file" name="doc[]" accept="image/*" hidden multiple >
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Browse File to Upload</p>
+        </div>
+        <div class="description1">
+            <input type="text" name="name" id="name" inputmode="text" placeholder=" Guest Name">
+            <textarea type="text" name="description" id="description" placeholder= " Guest Description" id="" cols="20" rows="5"></textarea>
+            <!-- <input type="text" inputmode="text"> -->
+        </div>
+        <div class="description2">
+            <input type="text" name="email" id="email" inputmode="email" placeholder=" Guest email">
+            <input type="text" name="linkedin" id="linkedin" inputmode="text" placeholder=" Guest LinkedIn">
+            <!-- <input type="text" inputmode="text"> -->
+            <button class="btn" type="submit" name="submit" >Add</button>
+        </div>
+        </form>
+    </div>
+    <table style="width: 90%;">
             <thead>
                 <tr>
                     <th>S No</th>
@@ -107,7 +108,6 @@ if(isset($_POST['submit'])){
                 ?>
             </tbody>
         </table>
-  </div>
   <script src="../js/guest_upload.js"></script>
 </body>
 </html>

@@ -64,13 +64,14 @@ if(isset($_POST['submit'])){
         <!-- <input type="text" name="date" id="date" inputmode="text" placeholder=" Date"> -->
      </div>
     </form>
-    <table>
+  </div>
+  <table style="width: 90%;">
             <thead>
                 <tr>
                     <th>No</th>
                     <th>Date</th>
                     <th>Month</th>
-                    <th>Titel</th>
+                    <th>Title</th>
                     <th>Desc(S)</th>
                     <th>Desc</th>
                     <th>Action</th>
@@ -108,7 +109,6 @@ if(isset($_POST['submit'])){
                 ?>
             </tbody>
         </table>
-  </div>
   <script src="../js/guest_upload.js"></script>
 </body>
 </html>
