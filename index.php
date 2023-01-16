@@ -36,7 +36,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
         <h1>New Horizons<br>in Biotechnology</h1>
         <p>Application of Biotechnology for a sustainable living has amplified over the past few decades by addressing the diverse domains including agriculture, food, health care, livestock management, energy, environment, waste management and a
         multitude of other areas. It may not be incorrect to say that the world needs to move towards a sustainable bio-economy for human race to continue on this planet. New Horizons in Biotechnology (NHBT) are a series of national conferences organized by the Department of Biotechnology, Haldia Institute of Technology with this theme in focus, where global challenges in multiple sectors are discussed and debated in the biotechnological context.</p>
-        <a href="#section2-about">Explore</a>
+        <a href="payment/razorpay.php">Register</a>
       </div>
       <div class="media-icons">
         <a href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>

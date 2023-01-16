@@ -55,11 +55,16 @@ if(isset($_POST['submit'])){
       <div class="description2">
         <input type="text" name="date" id="date" inputmode="text" placeholder=" Date">
         <input type="text" name="month" id="month" inputmode="text" placeholder=" Month">
-        <input type="text" name="event_titel" id="event_titel" inputmode="text" placeholder=" Event Titel">
+        <input type="text" name="event_titel" id="event_titel" inputmode="text" placeholder=" Event Title">
         <textarea type="text" name="event_short_description" id="event_short_description" placeholder= " Event Short Description 80 word" style="height:40px;" cols="20" rows="5"></textarea>
      </div>
       <div class="description2">
-        <textarea type="text" name="event_description" id="event_description" placeholder= " Event Description" style="height:140px;" cols="20" rows="5"></textarea>
+        <textarea type="text" name="event_description" id="event_description" placeholder= " Event Description" style="height:80px;" cols="20" rows="5"></textarea>
+        <div class="times" style="display: flex; flex-direction: row;">
+            <input type="text" name="name" id="name" inputmode="text" placeholder="Start Time" style="margin-right: 15px; width: 140px;">
+            <input type="text" name="name" id="name" inputmode="text" placeholder="End Time" style="width: 140px;">
+        </div>
+        <input type="text" name="name" id="name" inputmode="text" placeholder="POSTER/PAPER/NULL">
         <button class="btn" type="submit" name="submit" >Add</button>
         <!-- <input type="text" name="date" id="date" inputmode="text" placeholder=" Date"> -->
      </div>
