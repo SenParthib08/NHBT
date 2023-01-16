@@ -71,7 +71,6 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
                     <div class="details">
                         <h3><?php echo $event_titel; ?></h3>
                         <p><?php echo $event_desc_short; ?></p>
-                        <a href="event_pdf.php">View Details</a>
                     </div>
                     <div style="clear: both;"></div>
                 </li>
@@ -91,7 +90,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
                     <div style="clear: both;"></div>
                 </li> -->
             </ul>
-            <button class="btn2"><a href="event_pdf.php">View More</a></button>
+            <a class="btn2" href="event_pdf.php">View More</a>
         </div>
     </section>
 
