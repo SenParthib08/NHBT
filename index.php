@@ -52,10 +52,6 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
                 <h1>EVENTS AND ANNOUNCEMENTS</h1>
                 <p>The event consists of various interactive sessions. They are the guest lectures, poster presentation, paper presentation quiz etc. The main focuses of this year's discussions are microbial and environmental biotechnology, omics biotechnology, biopharmaceutical product development & quality control, bioethics & patent biotechnology etc.</p>
             </div>
-            <!-- <div class="buttons">
-              <button class="btn"> <a href="#">Poster template</a> </button>
-              <button class="btn"> <a href="#">Paper template</a> </button>
-            </div> -->
         </div>
         <div class="events">
             <ul>
@@ -142,14 +138,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
       <div class="footer-container">
         <div class="row">
           <div class="footer-col">
-            <!-- <h4>company</h4> -->
             <img src="images/logo_circle.png" alt="">
-            <!-- <ul>
-              <li><a href="#">about us</a></li>
-              <li><a href="#">our services</a></li>
-              <li><a href="#">privacy policy</a></li>
-              <li><a href="#">affiliate program</a></li>
-            </ul> -->
           </div>
           <div class="footer-col">
             <h4>Details:</h4>
@@ -164,15 +153,6 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
               <li><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?> (<?php echo $phone_ouner; ?>)</a></li>
             </ul>
           </div>
-          <!-- <div class="footer-col">
-            <h4>online shop</h4>
-            <ul>
-              <li><a href="#">watch</a></li>
-              <li><a href="#">bag</a></li>
-              <li><a href="#">shoes</a></li>
-              <li><a href="#">dress</a></li>
-            </ul>
-          </div> -->
           <div class="footer-col">
             <h4>follow us</h4>
             <div class="social-links">
