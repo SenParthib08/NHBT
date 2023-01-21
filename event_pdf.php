@@ -52,9 +52,9 @@ include('header.php');
                   <a class="btn" href="<?php echo $path; ?>" target="_blank" >Details</a>
                   <?php
                   if($poster_or_paper=="POSTER"){
-                    ?> <a class="btn" href="#" target="_blank" >Template</a> <?php
+                    ?> <a class="btn" href="<?php echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `paper_poster_pdf_link` WHERE type='POSTER'"))['data'] ?>" target="_blank" >Template</a> <?php
                   }if($poster_or_paper=="PAPER"){
-                    ?> <a class="btn" href="#" target="_blank" >Template</a> <?php
+                    ?> <a class="btn" href="<?php echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `paper_poster_pdf_link` WHERE type='PAPER'"))['data'] ?>" target="_blank" >Template</a> <?php
                   }
                   ?>
                 </div>
