@@ -76,14 +76,14 @@ if(isset($_POST['update_poster_pdf'])){
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Event Upload</title>
   <link rel="stylesheet" href="../css/guest_upload.css">
-  <link rel="stylesheet" href="../css/event_upload.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
-<body>
+<body style="overflow-x: hidden;">
 
     <main>
     <div class="second-cards">
-    <div class="card-singlee">
+    <div class="card-singlee" style="margin-left: -170px; margin-right: 10px; width: 550px; height: 250px;">
             <div>
                 <h2>Paper Presentation</h2>
                 <br>
@@ -122,7 +122,7 @@ if(isset($_POST['update_poster_pdf'])){
         </div>
         
         <div class="second-cards">
-    <div class="card-singlee">
+    <div class="card-singlee" style="width: 550px; height: 250px; margin-top: -15px;">
             <div>
                 <h2>Poster Presentation</h2>
                 <br>
@@ -164,7 +164,7 @@ if(isset($_POST['update_poster_pdf'])){
     <section class="home">
         <div class="text">Event Manage</div>
     </section>
-  <div class="wrapper header_fixed">
+  <div class="wrapper header_fixed" style="margin-top: -300px; margin-left: 60px;">
     <form action ="" method="post" enctype="multipart/form-data">
     <div class="upload">
         <header>Event PDF</header>
