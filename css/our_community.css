@@ -13,6 +13,10 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
 .container{
     margin-top: 40px;
     display: flex;
@@ -74,3 +78,98 @@ body{
     }
 
 }
+
+/* CSS code for the footer of community page */
+  .footer-container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  /* .footer{
+    background-image: linear-gradient(145deg, #0039e4, #04dbf1);
+    padding: 70px 0;
+  } */
+  .footer-col2{
+    width: 25%;
+    padding: 0 20px;
+  }
+  .footer-col2 img{
+    width: 250px;
+    height: 250px;
+  }
+  .footer-col2 h4{
+    font-size: 22px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 550;
+    position: relative;
+  }
+  .footer-col2 h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col2 ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col2 ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    /* color: #bbbbbb; */
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col2 ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col2 .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    padding-top: 12px;
+    font-size: 18px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 8px 8px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col2 .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col2{
+      width: 50%;
+      margin-bottom: 30px;
+    }
+    .footer-col2 img{
+      width: 150px;
+      height: 150px;
+    }
+  }
+  @media(max-width: 574px){
+    .footer-col2{
+      width: 100%;
+    }
+  }

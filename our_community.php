@@ -9,7 +9,7 @@ include('header.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/our_community.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/footer.css"> -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <title>Our Community</title>
@@ -53,28 +53,28 @@ include('header.php');
     </section>
     <div class="footer-container">
         <div class="row">
-          <div class="footer-col">
+          <div class="footer-col2">
             <h4><?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE item='name1'"))['data']; ?></h4>
             <div class="social-links">
                 <a href="mailto: <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE item='name1_email'"))['data']; ?>" target="_blank"><i class="fa fa-envelope"></i></a>
                 <a href="<?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE item='name1_linkedin'"))['data']; ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a>
               </div>
           </div>
-          <div class="footer-col">
+          <div class="footer-col2">
             <h4><?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE item='name2'"))['data']; ?></h4>
             <div class="social-links">
                 <a href="mailto: <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE id=5"))['data']; ?>" target="_blank"><i class="fa fa-envelope"></i></a>
                 <a href="<?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `faculty_body` WHERE id=6"))['data']; ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a>
               </div>
           </div>
-          <div class="footer-col">
+          <div class="footer-col2">
             <h4><?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `student_body` WHERE item='name1'"))['data']; ?></h4>
             <div class="social-links">
                 <a href="mailto: <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `student_body` WHERE id=2"))['data']; ?>" target="_blank"><i class="fa fa-envelope"></i></a>
                 <a href="<?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `student_body` WHERE id=3"))['data']; ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a>
               </div>
           </div>
-          <div class="footer-col">
+          <div class="footer-col2">
             <h4><?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `student_body` WHERE item='name2'"))['data']; ?></h4>
             <div class="social-links">
                 <a href="mailto: <?php  echo mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `student_body` WHERE id=5"))['data']; ?>" target="_blank"><i class="fa fa-envelope"></i></a>
