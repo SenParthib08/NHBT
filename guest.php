@@ -26,24 +26,24 @@ include('header.php');
 
 <body class="royal_preloader">
     <div id="page" class="site">
-        <div id="content" class="site-content">
+        <!-- <div id="content" class="site-content">
             <div class="page-header dtable text-center" style="background-image: url(images/bg-page-header.jpg);">
                 <div class="dcell">
                     <div class="container">
                         <h1 class="page-title">Professional Team</h1>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <section class="p-tb110 bg-light">
+            <section class="p-tb110 bg-light" style="margin-top: -5%;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 m-b35 text-center">
                             <div class="ot-heading">
-                                <h6><span>professional people</span></h6>
-                                <h2 class="main-heading">Our Leadership Team</h2>
+                                <h6><span>Speaker Glossary</span></h6>
+                                <h2 class="main-heading">Our Esteemed Dignitaries</h2>
                             </div>
-                            <p class="m-b0">We have experience working with large and small businesses and are ready to<br>develop a targeted strategy and plan that’s just right for you.</p>
+                            <p class="m-b0">We are fortunate to be graced by the presence of some distinguished personalities for our NHBT 2023 session. <br>Here is an overview of the guest speakers who will be joining us for the same.</p>
                         </div>
                     </div>
 
