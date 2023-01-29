@@ -72,6 +72,13 @@
                         </a>
                     </li>
 
+                    <li >
+                        <a href="poster_paper_upload.php">
+                            <i class='bx bx-paperclip icon' ></i>
+                            <span class="text nav-text">Poster Paper</span>
+                        </a>
+                    </li>
+
 
                     <li>
                         <a class="btns" href="pdf.php">

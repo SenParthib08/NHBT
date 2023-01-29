@@ -9,7 +9,7 @@ include('header.php');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>pdf</title>
+    <title>Proceedings</title>
     <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" /> -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/flaticon.css" />
@@ -29,8 +29,8 @@ include('header.php');
             <div class="row">
                 <div class="col-md-12 col-xs-12">
                     <div class="ot-heading text-center m-b40">
-                        <h6><span>our services</span></h6>
-                        <h2 class="main-heading">Introduce Best <br> Services for Business</h2>
+                        <h6><span>Proceedings</span></h6>
+                        <h2 class="main-heading">Turning Back to <br>Previous Chapters</h2>
                     </div>
                 </div>
             </div>

@@ -77,11 +77,12 @@ body{
     /* background: #fff8ba; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     width: 100px;
     padding: 8px;
     border-radius: 16px;
     margin: 30px 100px;
+    margin-left: 0px;
     font-size: 14px;
   }
   .event .event-right .event-description{
@@ -94,26 +95,31 @@ body{
   }
   
   .event .event-right .event-timing .btn {
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
+    text-align: center;
     margin-right: 20px;
     /* margin-left: 20px; */
-    padding: 5px 30px;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 1px 1px 10px grey;
-    background-image: linear-gradient(235deg, #0039e4, #04dbf1);
-  }
-  .event .event-right .event-timing .btn a{
     font-weight: 500;
     color: rgb(255, 255, 255);
     text-decoration: none;
+    padding: 5px 30px;
+    border-radius: 40px;
+    border: none;
+    box-shadow: 1px 1px 10px grey;
+    background-image: linear-gradient(235deg, #0039e4, #04dbf1);
+    background-size: 200% 100%;
+    transition: 0.5s;
+  }
+  .event .event-right .event-timing .btn:hover{
+    /* background-image: linear-gradient(235deg, #04dbf1, #0039e4); */
+    background-position: right center;
   }
   .event .event-right .event-timing .btn:active{
     box-shadow: none;
     color: rgb(5, 36, 59);
-    background-image: linear-gradient(to right, #62b3ce 0%, #546fce 100%);
+    /* background-image: linear-gradient(to right, #62b3ce 0%, #546fce 100%); */
   }
   
   @media (max-width: 550px) {

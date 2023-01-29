@@ -13,24 +13,49 @@ if(!isset($_SESSION['IsPaymentInfoAvil'])){
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>Search Engine Optimization</title>
+    <title>Registration</title>
     <!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" /> -->
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <link rel="stylesheet" href="../css/flaticon.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/loading.css">
+    <link rel="stylesheet" href="../css/header.css">
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <div id="loading" style="visibility:hidden"></div>
+    <link rel="stylesheet" href="../css/footer.css">
 	<title>Payment</title>
 </head>
 <body class="royal_preloader">
+    <header>
+        <a href="../index.php" class="brand">NHBT</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+            <a href="../index.php">Home</a>
+            <a href="../about_us.php">About</a>
+            <a href="../pdf.php">Proceedings</a>
+            <a href="../guest.php">Guests</a>
+            <a href="../gallery.php">Gallery</a>
+            <a href="../contact.php">Contact</a>
+            </div>
+        </div>
+    </header>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+            
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        });
+    </script>
     <div id="page" class="site">
         <div id="content" class="site-content">
             <div class="page-header dtable text-center" style="background-image: url(../images/bg-page-header.jpg);">
                 <div class="dcell">
                     <div class="container">
-                        <h1 class="page-title">Search Engine Optimization</h1>
+                        <h1 class="page-title">NHBT Registration Page</h1>
                     </div>
                 </div>
             </div>
@@ -51,7 +76,7 @@ if(!isset($_SESSION['IsPaymentInfoAvil'])){
                                 <div class="bg-overlay"></div>
                                 <div class="bg-overlay-img2"></div>
                                 <div class="title">
-                                    <h2>Know your SEO Score!</h2>
+                                    <h2>Register Here</h2>
                                 </div>
                                 <div role="form" class="wpcf7">
                             <!-- <form action="seoform.php" method="POST" class="wpcf7-form"> -->

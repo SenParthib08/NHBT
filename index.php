@@ -36,7 +36,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
         <h1>New Horizons<br>in Biotechnology</h1>
         <p>Application of Biotechnology for a sustainable living has amplified over the past few decades by addressing the diverse domains including agriculture, food, health care, livestock management, energy, environment, waste management and a
         multitude of other areas. It may not be incorrect to say that the world needs to move towards a sustainable bio-economy for human race to continue on this planet. New Horizons in Biotechnology (NHBT) are a series of national conferences organized by the Department of Biotechnology, Haldia Institute of Technology with this theme in focus, where global challenges in multiple sectors are discussed and debated in the biotechnological context.</p>
-        <a href="#section2-about">Explore</a>
+        <a href="payment">Register</a>
       </div>
       <div class="media-icons">
         <a href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -55,44 +55,42 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
         </div>
         <div class="events">
             <ul>
+            <?php
+                $res=mysqli_query($con,"SELECT `date`, `month`, `event_titel`, `event_desc_short` FROM event_manage ORDER BY id LIMIT 3");
+                while($rows=mysqli_fetch_assoc($res)){
+                    $date=$rows['date'];
+                    $month=$rows['month'];
+                    $event_titel=$rows['event_titel'];
+                    $event_desc_short=$rows['event_desc_short'];
+                    ?>
                 <li>
                     <div class="time">
-                        <h1>07<br><span>DEC</span>
+                        <h1><?php echo $date; ?><br><span><?php echo $month; ?></span>
                         </h1>
                     </div>
                     <div class="details">
-                        <h3>Event 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit laboriosam ullam tempore impedit autem voluptatem, consequ</p>
-                        <a href="#">View Details</a>
+                        <h3><?php echo $event_titel; ?></h3>
+                        <p><?php echo $event_desc_short; ?></p>
                     </div>
                     <div style="clear: both;"></div>
                 </li>
-                <li>
+                <?php
+                }
+                ?>
+                <!-- <li>
                     <div class="time">
                         <h1>08<br><span>DEC</span>
                         </h1>
                     </div>
                     <div class="details">
                         <h3>Event 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, praesentium? Maxime tempore fugiat culpa voluptas!</p>
-                        <a href="#">View Details</a>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. VelitLorem ipsum dolor</p>
+                        <a href="event_pdf.php">View Details</a>
                     </div>
                     <div style="clear: both;"></div>
-                </li>
-                <li>
-                    <div class="time">
-                        <h1>09<br><span>DEC</span>
-                        </h1>
-                    </div>
-                    <div class="details">
-                        <h3>Event 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, praesentium? Maxime tempore fugiat culpa voluptas!</p>
-                        <a href="#">View Details</a>
-                    </div>
-                    <div style="clear: both;"></div>
-                </li>
+                </li> -->
             </ul>
-            <button class="btn2"><a href="event_pdf.php">View More</a></button>
+            <a class="btn2" href="event_pdf.php">View More</a>
         </div>
     </section>
 
@@ -147,7 +145,7 @@ $website=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info`
               <li><a href="#">HIT, ICARE Complex, Hatiberia</a></li>
               <li><a href="#">Haldia, Purba Medinipore, WB, 721657</a></li>
               <?php $email=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='email'"))['data']; ?>
-              <li><a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a></li>
+              <li><a href="mailto:<?php echo $email; ?>" style="text-transform: lowercase;"><?php echo $email; ?></a></li>
               <?php $phone=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='phone'"))['data'];
                 $phone_ouner=mysqli_fetch_assoc(mysqli_query($con,"SELECT `data` FROM `contact_info` WHERE item='phone_owner'"))['data']; ?>
               <li><a href="tel:<?php echo $phone; ?>"><?php echo $phone; ?> (<?php echo $phone_ouner; ?>)</a></li>
